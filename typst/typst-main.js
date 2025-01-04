@@ -1176,7 +1176,7 @@ class ce {
         i,
         t
       ), w = performance.now();
-      console.log(`layer used: retieve = ${(w - g).toFixed(1)}ms`), await o(d.canvasList, () => d.resetLayout()), this.renderTextLayer(d.textLayerList, r);
+      console.log(`layer used: retrieve = ${(w - g).toFixed(1)}ms`), await o(d.canvasList, () => d.resetLayout()), this.renderTextLayer(d.textLayerList, r);
     });
   }
   createModule(t) {
@@ -2780,17 +2780,7 @@ async function En(n, t) {
 }
 function de() {
   const n = {};
-  return n.wbg = {}, n.wbg.__wbg_typstrenderer_new = function() {
-    return f(function(t) {
-      const e = ft.__wrap(t);
-      return m(e);
-    }, arguments);
-  }, n.wbg.__wbg_call_3bfa248576352471 = function() {
-    return k(function(t, e, r) {
-      const i = a(t).call(a(e), a(r));
-      return m(i);
-    }, arguments);
-  }, n.wbg.__wbindgen_object_drop_ref = function(t) {
+  return n.wbg = {}, n.wbg.__wbindgen_object_drop_ref = function(t) {
     R(t);
   }, n.wbg.__wbindgen_object_clone_ref = function(t) {
     const e = a(t);
@@ -2798,6 +2788,16 @@ function de() {
   }, n.wbg.__wbg_incrdomdocclient_new = function() {
     return f(function(t) {
       const e = gt.__wrap(t);
+      return m(e);
+    }, arguments);
+  }, n.wbg.__wbg_call_3bfa248576352471 = function() {
+    return k(function(t, e, r) {
+      const i = a(t).call(a(e), a(r));
+      return m(i);
+    }, arguments);
+  }, n.wbg.__wbg_typstrenderer_new = function() {
+    return f(function(t) {
+      const e = ft.__wrap(t);
       return m(e);
     }, arguments);
   }, n.wbg.__wbindgen_jsval_eq = function(t, e) {
@@ -3413,6 +3413,26 @@ function de() {
     return f(function(t, e, r) {
       a(t).innerHTML = I(e, r);
     }, arguments);
+  }, n.wbg.__wbg_getContext_bf8985355a4d22ca = function() {
+    return k(function(t, e, r) {
+      const i = a(t).getContext(I(e, r));
+      return T(i) ? 0 : m(i);
+    }, arguments);
+  }, n.wbg.__wbg_clearRect_b31e8293856d6504 = function() {
+    return f(function(t, e, r, i, o) {
+      a(t).clearRect(e, r, i, o);
+    }, arguments);
+  }, n.wbg.__wbg_getAttribute_8ac49f4186f4cefd = function() {
+    return f(function(t, e, r, i) {
+      const o = a(e).getAttribute(I(r, i));
+      var s = T(o) ? 0 : L(o, _.__wbindgen_export_0, _.__wbindgen_export_1), c = M;
+      b().setInt32(t + 4 * 1, c, !0), b().setInt32(t + 4 * 0, s, !0);
+    }, arguments);
+  }, n.wbg.__wbg_removeProperty_5acbca68235d0706 = function() {
+    return k(function(t, e, r, i) {
+      const o = a(e).removeProperty(I(r, i)), s = L(o, _.__wbindgen_export_0, _.__wbindgen_export_1), c = M;
+      b().setInt32(t + 4 * 1, c, !0), b().setInt32(t + 4 * 0, s, !0);
+    }, arguments);
   }, n.wbg.__wbg_content_57ec141416462f04 = function() {
     return f(function(t) {
       const e = a(t).content;
@@ -3477,26 +3497,6 @@ function de() {
       const r = e;
       return O(r), r;
     }, arguments);
-  }, n.wbg.__wbg_getContext_bf8985355a4d22ca = function() {
-    return k(function(t, e, r) {
-      const i = a(t).getContext(I(e, r));
-      return T(i) ? 0 : m(i);
-    }, arguments);
-  }, n.wbg.__wbg_clearRect_b31e8293856d6504 = function() {
-    return f(function(t, e, r, i, o) {
-      a(t).clearRect(e, r, i, o);
-    }, arguments);
-  }, n.wbg.__wbg_getAttribute_8ac49f4186f4cefd = function() {
-    return f(function(t, e, r, i) {
-      const o = a(e).getAttribute(I(r, i));
-      var s = T(o) ? 0 : L(o, _.__wbindgen_export_0, _.__wbindgen_export_1), c = M;
-      b().setInt32(t + 4 * 1, c, !0), b().setInt32(t + 4 * 0, s, !0);
-    }, arguments);
-  }, n.wbg.__wbg_removeProperty_5acbca68235d0706 = function() {
-    return k(function(t, e, r, i) {
-      const o = a(e).removeProperty(I(r, i)), s = L(o, _.__wbindgen_export_0, _.__wbindgen_export_1), c = M;
-      b().setInt32(t + 4 * 1, c, !0), b().setInt32(t + 4 * 0, s, !0);
-    }, arguments);
   }, n.wbg.__wbg_warn_41503a1c2194de89 = function() {
     return f(function(t) {
       console.warn(a(t));
@@ -3545,12 +3545,12 @@ function de() {
     return f(function(t) {
       queueMicrotask(a(t));
     }, arguments);
-  }, n.wbg.__wbindgen_closure_wrapper1673 = function() {
+  }, n.wbg.__wbindgen_closure_wrapper1670 = function() {
     return f(function(t, e, r) {
       const i = Wt(t, e, 201, fn);
       return m(i);
     }, arguments);
-  }, n.wbg.__wbindgen_closure_wrapper1674 = function() {
+  }, n.wbg.__wbindgen_closure_wrapper1671 = function() {
     return f(function(t, e, r) {
       const i = Wt(t, e, 201, wn);
       return m(i);
@@ -4479,7 +4479,7 @@ function ye() {
     return v(r);
   }, n.wbg.__wbg_queueMicrotask_c5419c06eab41e73 = function(t) {
     queueMicrotask(p(t));
-  }, n.wbg.__wbindgen_closure_wrapper15132 = function(t, e, r) {
+  }, n.wbg.__wbindgen_closure_wrapper15118 = function(t, e, r) {
     const i = Pn(t, e, 1488, Tn);
     return v(i);
   }, n;
